@@ -7,7 +7,7 @@
 - Role: Full Stack Web Developer
 - Location: Egypt
 - Website: https://youssef-abbas.vercel.app/
-- GitHub: https://github.com/YoussefAbbas12
+- GitHub: https://github.com/YoussefAbbasDev
 - Contact: https://wa.me/201027295412
 
 ## Featured Projects

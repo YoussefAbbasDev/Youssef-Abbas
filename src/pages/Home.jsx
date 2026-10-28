@@ -101,7 +101,7 @@ const Home = () => {
                             <FaDownload aria-hidden="true" /> Download CV
                         </ButtonMovingBorder>
                         <a
-                            href="https://github.com/YoussefAbbas12"
+                            href="https://github.com/YoussefAbbasDev"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Visit Youssef Abbas GitHub Profile"

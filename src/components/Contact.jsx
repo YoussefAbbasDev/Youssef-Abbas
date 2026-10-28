@@ -17,7 +17,7 @@ const Contact = () => {
     {
       name: 'GitHub',
       icon: <FaGithub />,
-      url: 'https://github.com/YoussefAbbas12',
+      url: 'https://github.com/YoussefAbbasDev',
       color: 'from-gray-600 to-gray-800',
       hoverColor: 'hover:shadow-gray-500/25'
     },

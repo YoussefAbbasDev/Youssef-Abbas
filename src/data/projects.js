@@ -36,7 +36,7 @@ export const projects = [
     tags: ["React", "APIs", "JavaScript"],
     image_url: "eslamic.webp",
     demo_url: "https://eslamic-jade.vercel.app/",
-    github_url: "https://github.com/YoussefAbbas12/eslamic.git",
+    github_url: "https://github.com/YoussefAbbasDev/eslamic.git",
     featured: true
   },
   {
@@ -46,7 +46,7 @@ export const projects = [
     tags: ["React", "JavaScript"],
     image_url: "ramadan-site.webp",
     demo_url: "https://ramadan-site-six.vercel.app/",
-    github_url: "https://github.com/YoussefAbbas12/ramadan-site.git",
+    github_url: "https://github.com/YoussefAbbasDev/ramadan-site.git",
     featured: true
   },
   {
@@ -56,7 +56,7 @@ export const projects = [
     tags: ["React", "JavaScript"],
     image_url: "132.webp",
     demo_url: "https://masertak.vercel.app/",
-    github_url: "https://github.com/YoussefAbbas12/masertak.git",
+    github_url: "https://github.com/YoussefAbbasDev/masertak.git",
     featured: false
   },
   {
@@ -66,7 +66,7 @@ export const projects = [
     tags: ["React", "JavaScript"],
     image_url: "evolvo.webp",
     demo_url: "https://evolve-nova.vercel.app/",
-    github_url: "https://github.com/YoussefAbbas12/Evolve-Nova.git",
+    github_url: "https://github.com/YoussefAbbasDev/Evolve-Nova.git",
     featured: false
   },
   {
@@ -76,7 +76,7 @@ export const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
     image_url: "msarweb.webp",
     demo_url: "https://msar-web.vercel.app/",
-    github_url: "https://github.com/YoussefAbbas12/MsarWeb.git",
+    github_url: "https://github.com/YoussefAbbasDev/MsarWeb.git",
     featured: false
   },
   {
