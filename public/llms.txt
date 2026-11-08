@@ -1,0 +1,25 @@
+# Youssef Abbas - Full Stack Web Developer
+
+> Portfolio and personal website of Youssef Mohamed Abbas, a Full Stack Web Developer specializing in React.js, Node.js, and modern web applications.
+
+## Summary
+- Name: Youssef Mohamed Abbas
+- Role: Full Stack Web Developer
+- Location: Egypt
+- Website: https://youssef-abbas-portofolio.vercel.app/
+- GitHub: https://github.com/YoussefAbbasDev
+- Contact: https://wa.me/201027295412
+
+## Featured Projects
+- [Leaf Doctor](https://leaf-doctor-front.vercel.app/): AI-powered plant disease diagnosis platform using React, TypeScript, and AI APIs.
+- [Reflecto](https://reflecto.com.sa/): Backend booking, loyalty, and payment system for car detailing in Saudi Arabia built with Node.js, Express, and MySQL.
+- [EnglishTaxo](https://englishtaxo.com/): Full-stack educational institute management platform built with React, Node.js, Express, and MySQL.
+- [Islamic Platform](https://eslamic-jade.vercel.app/): Comprehensive Islamic web platform featuring Quran, audio recitations, and tafsir.
+- [Ramadan Challenge](https://ramadan-site-six.vercel.app/): Ramadan daily tracker and prayer challenge application.
+- [Masertak](https://masertak.vercel.app/): Educational training and international scholarship guide platform.
+- [Evolve Nova](https://evolve-nova.vercel.app/): Modern company website for corporate training and development.
+
+## Tech Stack
+- Frontend: React.js, JavaScript, TypeScript, Tailwind CSS, HTML5, CSS3, Framer Motion
+- Backend: Node.js, Express.js, RESTful APIs, JWT Authentication, Payment Gateways
+- Databases: MySQL, PostgreSQL, Supabase

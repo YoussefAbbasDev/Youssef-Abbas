@@ -1,0 +1,184 @@
+/* Fonts are self-hosted (public/fonts) and preloaded in index.html to remove
+   the third-party Google Fonts request and speed up first paint. */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---- Brand display font ---- */
+@font-face {
+  font-family: 'Moderniz';
+  src: url('/fonts/moderniz.otf') format('opentype');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ---- Body / code font (Cascadia Code, latin subset, OFL) ---- */
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('/fonts/cascadia-code-latin.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400 700;
+  font-style: normal;
+}
+
+@layer base {
+  /* --- CSS VARIABLES FOR THEME --- */
+  :root {
+    --bg-primary: #f1f5f9;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --card-bg: #f8fafc;
+    --card-border: #e2e8f0;
+    --accent: #06b6d4;
+    --accent-glow: rgba(6, 182, 212, 0.5);
+  }
+
+  /* DARK MODE OVERRIDES */
+  .dark {
+    --bg-primary: #060010;
+    --text-primary: #ffffff;
+    --text-secondary: #94a3b8;
+    --card-bg: rgba(15, 23, 42, 0.6);
+    --card-border: rgba(255, 255, 255, 0.1);
+    --accent: #00ffdc;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    background-color: var(--bg-primary);
+    scrollbar-gutter: stable;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    overflow-x: clip;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeSpeed;
+  }
+
+  /* Fixed header offset for every in-page anchor */
+  section[id],
+  div[id='projects'],
+  div[id='contact'] {
+    scroll-margin-top: 6rem;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    background: rgba(0, 255, 220, 0.28);
+    color: inherit;
+  }
+
+  .font-cascadia {
+    font-family: 'Cascadia Code', ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+
+  /* iOS/Android safe areas */
+  .safe-top {
+    padding-top: max(0px, env(safe-area-inset-top));
+  }
+
+  .safe-bottom {
+    padding-bottom: max(0px, env(safe-area-inset-bottom));
+  }
+}
+
+/* --- Animated background used by the preloader --- */
+.bg-animated {
+  background: linear-gradient(120deg, #060010 0%, #0a1a2f 40%, #1b2b4b 100%);
+  background-size: 200% 200%;
+  animation: gradientMove 12s ease-in-out infinite;
+}
+
+.about-img {
+  border-radius: 25px;
+  box-shadow: 0 0 24px -6px #00ffdc;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Static lanyard poster: subtle hang/sway so the hero feels alive without
+   downloading the 3D physics bundle up front. */
+@keyframes lanyardSway {
+  0%, 100% { transform: rotate(-1.6deg); }
+  50% { transform: rotate(1.8deg); }
+}
+
+.lanyard-poster {
+  transform-origin: 50% 0%;
+  animation: lanyardSway 7s ease-in-out infinite;
+  will-change: transform;
+}
+
+@layer utilities {
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes reveal {
+    from { width: 0%; }
+    to { width: 100%; }
+  }
+
+  .animate-blink {
+    animation: blink 1s step-end infinite;
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.5s forwards;
+  }
+
+  .animate-reveal {
+    animation: reveal 2s linear forwards;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
+
+/* Respect users who ask for less motion. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .lanyard-poster {
+    animation: none;
+  }
+}

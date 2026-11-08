@@ -1,0 +1,7 @@
+# robots.txt for Youssef Abbas Portfolio
+# https://youssef-abbas-portofolio.vercel.app/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://youssef-abbas-portofolio.vercel.app/sitemap.xml

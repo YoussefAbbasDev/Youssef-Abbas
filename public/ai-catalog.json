@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "name": "Youssef Abbas Portfolio",
+  "description": "Portfolio of Youssef Abbas, Full Stack Web Developer",
+  "url": "https://youssef-abbas-portofolio.vercel.app/",
+  "resources": [
+    {
+      "name": "Portfolio Website",
+      "type": "website",
+      "url": "https://youssef-abbas-portofolio.vercel.app/"
+    },
+    {
+      "name": "LLM Reference",
+      "type": "documentation",
+      "url": "https://youssef-abbas-portofolio.vercel.app/llms.txt"
+    }
+  ]
+}
