@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "name": "Youssef Abbas Portfolio",
+  "description": "Portfolio of Youssef Abbas, Full Stack Web Developer specializing in React.js, Node.js, and modern web applications.",
+  "url": "https://youssef-abbas-portofolio.vercel.app/",
+  "resources": [
+    {
+      "name": "LLM Reference",
+      "type": "text/markdown",
+      "url": "https://youssef-abbas-portofolio.vercel.app/llms.txt"
+    },
+    {
+      "name": "AI Catalog",
+      "type": "application/json",
+      "url": "https://youssef-abbas-portofolio.vercel.app/ai-catalog.json"
+    }
+  ]
+}
